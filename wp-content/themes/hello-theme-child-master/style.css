@@ -1,0 +1,1208 @@
+/* 
+Theme Name: Hello Elementor Child
+Theme URI: https://github.com/elementor/hello-theme-child/
+Description: Hello Elementor Child is a child theme of Hello Elementor, created by Elementor team
+Author: Elementor Team
+Author URI: https://elementor.com/
+Template: hello-elementor
+Version: 2.0.0
+Text Domain: hello-elementor-child
+License: GNU General Public License v3 or later.
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, featured-images, rtl-language-support, threaded-comments, translation-ready
+*/
+
+/* Add your custom styles here */
+
+/* Recoleta Font Family */
+
+@font-face {
+    font-family: 'Recoleta';
+    src: url('/wp-content/themes/hello-theme-child-master/assets/fonts/recoleta/Recoleta-Bold.eot');
+    src: url('/wp-content/themes/hello-theme-child-master/assets/fonts/recoleta/Recoleta-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/wp-content/themes/hello-theme-child-master/assets/fonts/recoleta/Recoleta-Bold.woff2') format('woff2'),
+        url('/wp-content/themes/hello-theme-child-master/assets/fonts/recoleta/Recoleta-Bold.woff') format('woff'),
+        url('/wp-content/themes/hello-theme-child-master/assets/fonts/recoleta/Recoleta-Bold.ttf') format('truetype'),
+        url('/wp-content/themes/hello-theme-child-master/assets/fonts/recoleta/Recoleta-Bold.svg#Recoleta-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Recoleta';
+    src: url('/wp-content/themes/hello-theme-child-master/assets/fonts/recoleta/Recoleta-Black.eot');
+    src: url('/wp-content/themes/hello-theme-child-master/assets/fonts/recoleta/Recoleta-Black.eot?#iefix') format('embedded-opentype'),
+        url('/wp-content/themes/hello-theme-child-master/assets/fonts/recoleta/Recoleta-Black.woff2') format('woff2'),
+        url('/wp-content/themes/hello-theme-child-master/assets/fonts/recoleta/Recoleta-Black.woff') format('woff'),
+        url('/wp-content/themes/hello-theme-child-master/assets/fonts/recoleta/Recoleta-Black.ttf') format('truetype'),
+        url('/wp-content/themes/hello-theme-child-master/assets/fonts/recoleta/Recoleta-Black.svg#Recoleta-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Recoleta';
+    src: url('/wp-content/themes/hello-theme-child-master/assets/fonts/recoleta/Recoleta-Light.eot');
+    src: url('/wp-content/themes/hello-theme-child-master/assets/fonts/recoleta/Recoleta-Light.eot?#iefix') format('embedded-opentype'),
+        url('/wp-content/themes/hello-theme-child-master/assets/fonts/recoleta/Recoleta-Light.woff2') format('woff2'),
+        url('/wp-content/themes/hello-theme-child-master/assets/fonts/recoleta/Recoleta-Light.woff') format('woff'),
+        url('/wp-content/themes/hello-theme-child-master/assets/fonts/recoleta/Recoleta-Light.ttf') format('truetype'),
+        url('/wp-content/themes/hello-theme-child-master/assets/fonts/recoleta/Recoleta-Light.svg#Recoleta-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Recoleta';
+    src: url('/wp-content/themes/hello-theme-child-master/assets/fonts/recoleta/Recoleta-SemiBold.eot');
+    src: url('/wp-content/themes/hello-theme-child-master/assets/fonts/recoleta/Recoleta-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('/wp-content/themes/hello-theme-child-master/assets/fonts/recoleta/Recoleta-SemiBold.woff2') format('woff2'),
+        url('/wp-content/themes/hello-theme-child-master/assets/fonts/recoleta/Recoleta-SemiBold.woff') format('woff'),
+        url('/wp-content/themes/hello-theme-child-master/assets/fonts/recoleta/Recoleta-SemiBold.ttf') format('truetype'),
+        url('/wp-content/themes/hello-theme-child-master/assets/fonts/recoleta/Recoleta-SemiBold.svg#Recoleta-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Recoleta';
+    src: url('/wp-content/themes/hello-theme-child-master/assets/fonts/recoleta/Recoleta-Medium.eot');
+    src: url('/wp-content/themes/hello-theme-child-master/assets/fonts/recoleta/Recoleta-Medium.eot?#iefix') format('embedded-opentype'),
+        url('/wp-content/themes/hello-theme-child-master/assets/fonts/recoleta/Recoleta-Medium.woff2') format('woff2'),
+        url('/wp-content/themes/hello-theme-child-master/assets/fonts/recoleta/Recoleta-Medium.woff') format('woff'),
+        url('/wp-content/themes/hello-theme-child-master/assets/fonts/recoleta/Recoleta-Medium.ttf') format('truetype'),
+        url('/wp-content/themes/hello-theme-child-master/assets/fonts/recoleta/Recoleta-Medium.svg#Recoleta-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Recoleta';
+    src: url('/wp-content/themes/hello-theme-child-master/assets/fonts/recoleta/Recoleta-Thin.eot');
+    src: url('/wp-content/themes/hello-theme-child-master/assets/fonts/recoleta/Recoleta-Thin.eot?#iefix') format('embedded-opentype'),
+        url('/wp-content/themes/hello-theme-child-master/assets/fonts/recoleta/Recoleta-Thin.woff2') format('woff2'),
+        url('/wp-content/themes/hello-theme-child-master/assets/fonts/recoleta/Recoleta-Thin.woff') format('woff'),
+        url('/wp-content/themes/hello-theme-child-master/assets/fonts/recoleta/Recoleta-Thin.ttf') format('truetype'),
+        url('/wp-content/themes/hello-theme-child-master/assets/fonts/recoleta/Recoleta-Thin.svg#Recoleta-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Recoleta';
+    src: url('/wp-content/themes/hello-theme-child-master/assets/fonts/recoleta/Recoleta-Regular.eot');
+    src: url('/wp-content/themes/hello-theme-child-master/assets/fonts/recoleta/Recoleta-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/wp-content/themes/hello-theme-child-master/assets/fonts/recoleta/Recoleta-Regular.woff') format('woff'),
+        url('/wp-content/themes/hello-theme-child-master/assets/fonts/recoleta/Recoleta-Regular.ttf') format('truetype'),
+        url('/wp-content/themes/hello-theme-child-master/assets/fonts/recoleta/Recoleta-Regular.svg#Recoleta-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Recoleta Font Family */
+
+/* Bely Font Family */
+
+@font-face {
+    font-family: 'Bely-Italic';
+    src: url('/wp-content/themes/hello-theme-child-master/assets/fonts/bely/Bely-Italic.eot');
+    src: url('/wp-content/themes/hello-theme-child-master/assets/fonts/bely/Bely-Italic.eot?#iefix') format('embedded-opentype'),
+        url('/wp-content/themes/hello-theme-child-master/assets/fonts/bely/Bely-Italic.woff2') format('woff2'),
+        url('/wp-content/themes/hello-theme-child-master/assets/fonts/bely/Bely-Italic.woff') format('woff'),
+        url('/wp-content/themes/hello-theme-child-master/assets/fonts/bely/Bely-Italic.ttf') format('truetype'),
+        url('/wp-content/themes/hello-theme-child-master/assets/fonts/bely/Bely-Italic.svg#Bely-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bely';
+    src: url('/wp-content/themes/hello-theme-child-master/assets/fonts/bely/Bely.eot');
+    src: url('/wp-content/themes/hello-theme-child-master/assets/fonts/bely/Bely.eot?#iefix') format('embedded-opentype'),
+        url('/wp-content/themes/hello-theme-child-master/assets/fonts/bely/Bely.woff2') format('woff2'),
+        url('/wp-content/themes/hello-theme-child-master/assets/fonts/bely/Bely.woff') format('woff'),
+        url('/wp-content/themes/hello-theme-child-master/assets/fonts/bely/Bely.ttf') format('truetype'),
+        url('/wp-content/themes/hello-theme-child-master/assets/fonts/bely/Bely.svg#Bely') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bely Display';
+    src: url('/wp-content/themes/hello-theme-child-master/assets/fonts/bely/BelyDisplayW00-Regular.eot');
+    src: url('/wp-content/themes/hello-theme-child-master/assets/fonts/bely/BelyDisplayW00-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/wp-content/themes/hello-theme-child-master/assets/fonts/bely/BelyDisplayW00-Regular.woff2') format('woff2'),
+        url('/wp-content/themes/hello-theme-child-master/assets/fonts/bely/BelyDisplayW00-Regular.woff') format('woff'),
+        url('/wp-content/themes/hello-theme-child-master/assets/fonts/bely/BelyDisplayW00-Regular.ttf') format('truetype'),
+        url('/wp-content/themes/hello-theme-child-master/assets/fonts/bely/BelyDisplayW00-Regular.svg#BelyDisplayW00-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bely Bold';
+    src: url('/wp-content/themes/hello-theme-child-master/assets/fonts/bely/Bely-Bold.eot');
+    src: url('/wp-content/themes/hello-theme-child-master/assets/fonts/bely/Bely-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/wp-content/themes/hello-theme-child-master/assets/fonts/bely/Bely-Bold.woff2') format('woff2'),
+        url('/wp-content/themes/hello-theme-child-master/assets/fonts/bely/Bely-Bold.woff') format('woff'),
+        url('/wp-content/themes/hello-theme-child-master/assets/fonts/bely/Bely-Bold.ttf') format('truetype'),
+        url('/wp-content/themes/hello-theme-child-master/assets/fonts/bely/Bely-Bold.svg#Bely-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Bely Font Family */
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Bely Bold' !important;
+}
+
+.p-margin-none .elementor-widget-container p{
+	margin-bottom: 0;
+}
+
+.font-bely-italic .elementor-heading-title{
+	font-family: 'Bely-Italic' !important;
+}
+
+.font-bely .elementor-heading-title{
+	font-family: 'Bely' !important;
+}
+
+.font-bely-display .elementor-heading-title{
+	font-family: 'Bely Display' !important;
+}
+
+.font-bely-bold .elementor-heading-title{
+	font-family: 'Bely Bold' !important;
+}
+
+.font-recoleta .elementor-heading-title{
+	font-family: 'Recoleta' !important;
+}
+
+/* Header Css Starts */
+
+.header-call-btn .elementor-icon-box-wrapper .elementor-icon-box-content .elementor-icon-box-title{
+	margin-top: 0;
+}
+
+/* Header Css Ends */
+
+/* Footer Css Starts */
+
+.footer-logo-col{
+	width: 24% !important;
+}
+
+.quick-lilnks-row{
+	width: 14% !important;
+}
+
+.dental-treatment-col{
+	width: 22% !important;
+}
+
+.skin-treatment-col{
+	width: 19% !important;
+}
+
+.contact-us-col{
+	width: 21% !important;
+}
+
+.footer-title-underline h2.elementor-heading-title{
+	position: relative;
+}
+
+.footer-title-underline h2.elementor-heading-title:after{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: #3869A4;
+	width: 45px;
+	height: 3px;
+	border-radius: 20px;
+	transform: translate(0, 10px);
+}
+
+/* Footer Css Eds */
+
+/* Home Page Css Starts */
+
+.hero-slider .slick-list .slick-track .slider-item{
+	background-size: cover !important;
+	background-position: center center !important;
+}
+
+.hero-slider .slick-list .slick-track .slider-item .overlay .slide{
+	padding: 280px 0;
+	text-align: left;
+	width: 100%;
+	max-width: 1051px;
+	margin: 0 auto;
+}
+
+.hero-slider button.slick-arrow{
+	position: absolute;
+	top: 50%;
+	z-index: 10;
+	background: transparent;
+	border: 3px solid #fff;
+	border-radius: 100%;
+	width: 50px;
+	height: 50px;
+	transition: all .3s;
+	padding: 0;
+	margin-top: -25px;
+}
+
+.hero-slider button.slick-arrow i{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	color: #fff;
+}
+
+.hero-slider button.slick-arrow:hover{
+	background: #3869A4;
+	border-color: #3869A4;
+}
+
+.hero-slider button.slick-arrow:hover i{
+	color: #fff;
+}
+
+.hero-slider button.slick-arrow:focus,
+.hero-slider ul.slick-dots li button:focus,
+.services-solution-slider ul.slick-dots li button:focus{
+	outline: none !important;
+}
+
+.hero-slider button.slick-arrow.slick-prev{
+	left: calc(((100vw - 1140px) / 2) - 40px );
+}
+
+.hero-slider button.slick-arrow.slick-next{
+	right: calc(((100vw - 1140px) / 2) - 40px);
+}
+
+.hero-slider ul.slick-dots{
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	position: absolute;
+	bottom: 30px;
+	left: 0;
+	right: 0;
+}
+
+.hero-slider ul.slick-dots li{
+	display: inline;
+	margin: 0 5px;
+}
+
+.hero-slider ul.slick-dots li button{
+	background: rgba(255, 255, 255, 0.4);
+	padding: 0;
+	width: 10px;
+	height: 10px;
+	text-indent: -9999px;
+	border: none;
+	border-radius: 50%;
+}
+
+.hero-slider ul.slick-dots li.slick-active button{
+	background: #fff;
+}
+
+.hero-slider .slick-list .slider-item .slide h2,
+.hero-slider .slick-list .slider-item .slide h3,
+.hero-slider .slick-list .slider-item .slide p{
+	margin: 0;
+}
+
+.hero-slider .slick-list .slider-item .slide h2{
+	font-size: 60px;
+	font-weight: 700;
+	font-style: normal;
+	color: #fff;
+	line-height: 1.2em;
+}
+
+.hero-slider .slick-list .slider-item .slide h3{
+	font-family: 'Recoleta' !important;
+	font-size: 34px;
+	font-weight: 600;
+	font-style: normal;
+	color: #fff;
+	line-height: 1.2em;
+	margin: 15px 0;
+}
+
+.hero-slider .slick-list .slider-item .slide p{
+	font-size: 16px;
+	font-weight: 600;
+	font-style: normal;
+	color: #fff;
+	line-height: 1.8em;
+}
+
+.service-list{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.service-list .service-item{
+	width: calc( 25% - 15px );
+	margin-right: 20px;
+	margin-bottom: 10px;
+	animation: fadeUpBox;
+	transition: all 2s;
+}
+
+@keyframes fadeUpBox {
+	0% {
+		opacity: 0;
+		transform: translate3d(0, 100%, 0);
+	}
+	100% {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+.service-list .service-item:nth-of-type(4n + 4){
+	margin-right: 0;
+}
+
+.service-list .service-item .service-box{
+	border-radius: 20px;
+	padding: 40px 30px;
+	transition: all .5s;
+	text-align: center;
+}
+
+.service-list .service-item .service-box:hover{
+	background: #FFFFFF;
+	box-shadow: 0 0px 21px 0 rgba(56, 105, 164, 0.25);
+	transform: translateY(-8px);
+}
+
+.service-list .service-item .service-box .service-desc{
+	transition: all 1s;
+	transform: translateY(14px);
+	opacity: 0;
+}
+
+.service-list .service-item .service-box:hover .service-desc{
+    transform: none;
+	opacity: 1;
+	animation: fadeUp .5s ease-in both;
+}
+
+.service-list .service-item .service-box .service-img{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.service-list .service-item .service-box .service-img h4 a{
+	font-family: 'Recoleta';
+	font-size: 22px;
+	font-weight: 600;
+	color: #3869A4;
+	line-height: 1.2em;
+	margin: 10px 0 20px;
+	transition: all .3s;
+}
+
+.service-list .service-item .service-box .service-img h4 a:hover{
+	color: #303030;
+}
+
+.service-list .service-item .service-box .service-desc .service-content p{
+	font-weight: 400;
+	color: #A4A4A4;
+	line-height: 1.4em;
+	margin: 0;
+}
+
+.service-list .service-item .service-box .service-desc .service-btn a{
+	display: inline-block;
+	margin-top: 20px;
+	transition: all .3s;
+}
+
+@keyframes fadeUp {
+	from {
+		opacity: 0;
+		transform: translate3d(0, 20%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+.client-review-list button.navigation-btn{
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: transparent;
+	border: 3px solid #3869A4;
+	background: #3869A4;
+	border-radius: 100%;
+	width: 60px;
+	height: 60px;
+	transition: all .3s;
+	padding: 0;
+}
+
+.client-review-list button.navigation-btn.slick-prev{
+	transform: translate(-80px, -100px);
+}
+
+.client-review-list button.navigation-btn.slick-next{
+	transform: translate(0, -100px);
+}
+
+.client-review-list button.navigation-btn i{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	font-size: 25px;
+}
+
+.client-review-list button.navigation-btn:hover{
+	background: #000;
+	border-color: #000;
+}
+
+.client-review-list button.navigation-btn:focus{
+	outline: none;
+}
+
+.why-choose-us-inner-section{
+	margin-left: calc((( 100vw - 1140px ) / 2) + 20px);
+}
+
+.why-choose-us-points .elementor-image-box-wrapper figure.elementor-image-box-img img{
+	width: 70px;
+	height: 70px;
+	aspect-ratio: 1/1;
+	object-fit: cover;
+}
+
+.client-review-list .review-item .review-box{
+	padding: 80px 40px 40px;
+	border-radius: 10px;
+	box-shadow: 0 6px 30px 0 rgba(56, 105, 164, 0.15);
+	position: relative;
+}
+
+.client-review-list .review-item .review-box:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url('/wp-content/uploads/2023/10/quotes-icon.png') no-repeat;
+	width: 105px;
+	height: 88px;
+	transform: translate(40px, 40px)
+}
+
+.client-review-list .slick-slide{
+	margin: 30px 20px;
+}
+
+.client-review-list .slick-list{
+	margin: 0 -20px;
+}
+
+.client-review-list .review-item .review-box .review-content{
+	margin-bottom: 30px;
+	z-index: 10;
+}
+
+.client-review-list .review-item .review-box .review-content p{
+	line-height: 1.8em;
+	color: #747581;
+	margin: 0;
+}
+
+.client-review-list .review-item .review-box .client-detail{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 10;
+}
+
+.client-review-list .review-item .review-box .client-detail .client-name h2{
+	font-size: 18px;
+	font-weight: 600;
+	color: #000;
+	line-height: 1.2em;
+	margin: 0 0 5px;
+}
+
+.client-review-list .review-item .review-box .client-detail .client-name h3{
+	font-family: 'Recoleta' !important;
+	font-size: 14px;
+	font-weight: 400;
+	color: #747581;
+	line-height: 1.2em;
+	margin: 0;
+}
+
+.client-review-list .review-item .review-box .client-detail .client-rating ul{
+	padding: 0;
+	margin: 0;
+	display: flex;
+	align-items: end;
+}
+
+.client-review-list .review-item .review-box .client-detail .client-rating ul li{
+	list-style-type: none;
+}
+
+.client-review-list .review-item .review-box .client-detail .client-rating ul li i{
+	color: #F9DB4D;
+	font-size: 15px;
+}
+
+.client-review-list .review-item .review-box .client-detail .client-rating ul li.rate{
+	font-size: 14px;
+	font-weight: 400;
+	color: #BABABA;
+	line-height: 1.2em;
+	margin-left: 10px;
+}
+
+.get-an-appointment-form form.wpcf7-form div.form-group div.form-item span.wpcf7-form-control-wrap input.name,
+.get-an-appointment-form form.wpcf7-form div.form-group div.form-item span.wpcf7-form-control-wrap input.email,
+.get-an-appointment-form form.wpcf7-form div.form-group div.form-item span.wpcf7-form-control-wrap input.phone,
+.get-an-appointment-form form.wpcf7-form div.form-group div.form-item span.wpcf7-form-control-wrap input.subject{
+	font-size: 16px;
+	font-weight: 400;
+	color: #747686;
+	line-height: 1.2em;
+	padding: 15px 15px 15px 40px;
+	border: 1px solid #303030;
+	border-radius: 12px;
+	background: #fff;
+	position: relative;
+}
+
+.get-an-appointment-form form.wpcf7-form div.form-group div.form-item span.wpcf7-form-control-wrap input.name::placeholder,
+.get-an-appointment-form form.wpcf7-form div.form-group div.form-item span.wpcf7-form-control-wrap input.email::placeholder,
+.get-an-appointment-form form.wpcf7-form div.form-group div.form-item span.wpcf7-form-control-wrap input.phone::placeholder,
+.get-an-appointment-form form.wpcf7-form div.form-group div.form-item span.wpcf7-form-control-wrap input.subject::placeholder{
+	color: #747686 !important;
+}
+
+.get-an-appointment-form form.wpcf7-form div.form-group div.form-item span.wpcf7-form-control-wrap input.name:focus,
+.get-an-appointment-form form.wpcf7-form div.form-group div.form-item span.wpcf7-form-control-wrap input.email:focus,
+.get-an-appointment-form form.wpcf7-form div.form-group div.form-item span.wpcf7-form-control-wrap input.phone:focus,
+.get-an-appointment-form form.wpcf7-form div.form-group div.form-item span.wpcf7-form-control-wrap input.subject:focus,
+.get-an-appointment-form form.wpcf7-form div.form-submit-group input.book-appointment-btn{
+	outline: none;
+	box-shadow: none;
+}
+
+.get-an-appointment-form form.wpcf7-form div.form-group{
+	display: flex;
+}
+
+.get-an-appointment-form form.wpcf7-form div.form-group div.form-item{
+	margin-right: 20px;
+	margin-bottom: 15px;
+}
+
+.get-an-appointment-form form.wpcf7-form div.form-group div.form-item p,
+.get-an-appointment-form form.wpcf7-form div.form-submit-group p{
+	margin-bottom: 0;
+}
+
+
+.get-an-appointment-form form.wpcf7-form div.form-group div.form-item:nth-child(even){
+	margin-right: 0;
+}
+
+.get-an-appointment-form form.wpcf7-form div.form-submit-group{
+	text-align: center;
+	margin-top: 10px;
+}
+
+.get-an-appointment-form form.wpcf7-form div.form-submit-group input.book-appointment-btn{
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 400;
+	background: #fff;
+	color: #747686;
+	padding: 15px 40px;
+	border: 1px solid #303030;
+	border-radius: 12px;
+	transition: all .3s;
+	text-transform: uppercase;
+}
+
+.get-an-appointment-form form.wpcf7-form div.form-submit-group input.book-appointment-btn:hover{
+	background: #303030;
+	color: #fff;
+}
+
+.get-an-appointment-form form.wpcf7-form div.form-submit-group .wpcf7-spinner{
+	display: none;
+}
+
+.get-an-appointment-form form.wpcf7-form div.form-group div.form-item.form-name span.wpcf7-form-control-wrap:after,
+.get-an-appointment-form form.wpcf7-form div.form-group div.form-item.form-email span.wpcf7-form-control-wrap:after,
+.get-an-appointment-form form.wpcf7-form div.form-group div.form-item.form-phone span.wpcf7-form-control-wrap:after,
+.get-an-appointment-form form.wpcf7-form div.form-group div.form-item.form-subject span.wpcf7-form-control-wrap:after{
+	content: '';
+	position: absolute;
+	top: 4px;
+	left: 10px;
+	width: 20px;
+	height: 20px;
+}
+
+.get-an-appointment-form form.wpcf7-form div.form-group div.form-item.form-name span.wpcf7-form-control-wrap:after{
+	background: url('/wp-content/uploads/2023/10/user.png') no-repeat;
+}
+
+.get-an-appointment-form form.wpcf7-form div.form-group div.form-item.form-email span.wpcf7-form-control-wrap:after,
+.get-an-appointment-form form.wpcf7-form div.form-group div.form-item.form-subject span.wpcf7-form-control-wrap:after{
+	background: url('/wp-content/uploads/2023/10/Mail.png') no-repeat;
+}
+
+.get-an-appointment-form form.wpcf7-form div.form-group div.form-item.form-phone span.wpcf7-form-control-wrap:after{
+	background: url('/wp-content/uploads/2023/10/call.png') no-repeat;
+}
+
+.get-an-appointment-form form.wpcf7-form div.form-group div.form-item span.wpcf7-form-control-wrap span.wpcf7-not-valid-tip{
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.2em;
+	color: #fff;
+	margin-top: 5px;
+}
+
+.get-an-appointment-form form.wpcf7-form.invalid div.wpcf7-response-output{
+	background: #ffb90080;
+	border-color: #ffb900;
+	color: #fff;
+	padding: 5px 10px;
+	font-size: 14px;
+	line-height: 1.4em;
+	margin: 10px;
+}
+
+.get-an-appointment-form form.wpcf7-form.failed div.wpcf7-response-output{
+	background: #dc323280;
+	border-color: #dc3232;
+	color: #fff;
+	padding: 5px 10px;
+	font-size: 14px;
+	line-height: 1.4em;
+	margin: 10px;
+}
+
+.our-gallery-slider{
+	position: relative;
+}
+
+.our-gallery-slider .elementor-image-carousel-wrapper div.elementor-swiper-button{
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: unset;
+	bottom: unset;
+	width: 60px;
+	height: 60px;
+	background: #3869A4;
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.our-gallery-slider .elementor-image-carousel-wrapper div.elementor-swiper-button.elementor-swiper-button-next{
+	transform: translate(0, -100px)
+}
+
+.our-gallery-slider .elementor-image-carousel-wrapper div.elementor-swiper-button.elementor-swiper-button-prev{
+	transform: translate(-80px, -100px);
+}
+
+/* Home Page Css Ends */
+
+/* About Us Page Css Starts */
+
+.about-points ul.elementor-icon-list-items{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.about-points ul.elementor-icon-list-items li.elementor-icon-list-item{
+	width: 50%;
+}
+
+/* About Us Page Css Ends */
+
+/* Contact Us Page Css Starts */
+
+.contact-form form.wpcf7-form .form-group .form-item span.wpcf7-form-control-wrap input,
+.contact-form form.wpcf7-form .form-group .form-message span.wpcf7-form-control-wrap textarea{
+	font-size: 16px;
+	font-weight: 400;
+	color: #747686;
+	line-height: 1.2em;
+	padding: 15px 15px;
+	border: 1px solid #303030;
+	border-radius: 12px;
+	background: #fff;
+}
+
+.contact-form form.wpcf7-form .form-group .form-message{
+	width: 100%;	
+}
+
+.contact-form form.wpcf7-form .form-group .form-message span.wpcf7-form-control-wrap textarea{
+	resize: none;
+}
+
+.contact-form form.wpcf7-form .form-group .form-item span.wpcf7-form-control-wrap input:focus,
+.contact-form form.wpcf7-form .form-group .form-message span.wpcf7-form-control-wrap textarea:focus{
+	outline: none;
+	box-shadow: none;
+}
+
+.contact-form form.wpcf7-form .form-group{
+	display: flex;
+}
+
+.contact-form form.wpcf7-form .form-group .form-item{
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.contact-form form.wpcf7-form div.form-group div.form-item p,
+.contact-form form.wpcf7-form div.form-submit-group p{
+	margin-bottom: 0;
+}
+
+.contact-form form.wpcf7-form .form-group .form-item:nth-child(even){
+	margin-right: 0;
+}
+
+.contact-form form.wpcf7-form div.form-submit-group{
+	margin-top: 10px;
+}
+
+.contact-form form.wpcf7-form div.form-submit-group input.book-appointment-btn{
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 500;
+	background: #3869A4;
+	color: #fff;
+	padding: 12px 40px;
+	border: 1px solid #3869A4;
+	border-radius: 5px;
+	transition: all .3s;
+}
+
+.contact-form form.wpcf7-form div.form-submit-group input.book-appointment-btn:hover{
+	background: #303030;
+	color: #fff;
+	border-color: #303030;
+}
+
+.contact-form form.wpcf7-form div.form-submit-group input.book-appointment-btn:focus{
+	outline: none;
+}
+
+.contact-form form.wpcf7-form div.form-submit-group .wpcf7-spinner{
+	display: none;
+}
+
+.contact-form form.wpcf7-form div.form-group div.form-item span.wpcf7-form-control-wrap span.wpcf7-not-valid-tip,
+.contact-form form.wpcf7-form div.form-group div.form-message span.wpcf7-form-control-wrap span.wpcf7-not-valid-tip{
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.2em;
+	color: #dc3232;
+	margin-top: 5px;
+}
+
+.contact-form form.wpcf7-form.invalid div.wpcf7-response-output{
+	background: #ffb90080;
+	border-color: #ffb900;
+	color: #fff;
+	padding: 5px 10px;
+	font-size: 14px;
+	line-height: 1.4em;
+	margin: 10px 0;
+}
+
+.contact-form form.wpcf7-form.failed div.wpcf7-response-output{
+	background: #dc323280;
+	border-color: #dc3232;
+	color: #fff;
+	padding: 5px 10px;
+	font-size: 14px;
+	line-height: 1.4em;
+	margin: 10px 0;
+}
+
+.contact-box .elementor-widget-wrap{
+	transition: all .3s !important;
+}
+
+.contact-box:hover .elementor-widget-wrap{
+	background: #3869A4 !important;
+}
+
+.contact-box:hover .elementor-widget-wrap .contact-item .elementor-icon-box-wrapper .elementor-icon-box-icon .elementor-icon{
+	color: #fff;
+	fill: #fff;
+	border-color: #fff;
+}
+
+.contact-box:hover .elementor-widget-wrap .contact-item .elementor-icon-box-wrapper .elementor-icon-box-content .elementor-icon-box-title,
+.contact-box:hover .elementor-widget-wrap .contact-item .elementor-icon-box-wrapper .elementor-icon-box-content .elementor-icon-box-description,
+.contact-box:hover .elementor-widget-wrap .contact-item .elementor-icon-box-wrapper .elementor-icon-box-content .elementor-icon-box-description a{
+	color: #fff;
+}
+
+.contact-box:hover .elementor-widget-wrap .contact-item .elementor-icon-box-wrapper .elementor-icon-box-content .elementor-icon-box-description a:hover{
+	color: #191A15;
+}
+
+/* Contact Us Page Css Ends */
+
+
+@media only screen and (max-width: 991px) {
+	
+	.br-tablet-none br{
+		display: none;
+	}
+	
+	/* Footer Css Starts */
+
+	.footer-logo-col{
+		width: 100% !important;
+		margin-bottom: 10px
+	}
+
+	.quick-links-col,
+	.skin-treatment-col,
+	.dental-treatment-col,
+	.contact-us-col{
+		width: 50% !important;
+	}
+	
+	.quick-links-col .footer-quick-links .elementor-widget-container .hfe-nav-menu nav.hfe-nav-menu__layout-vertical ul.hfe-nav-menu li.menu-item,
+	.dental-treatment-col .dental-treatments-link .elementor-widget-container .hfe-nav-menu nav.hfe-nav-menu__layout-vertical ul.hfe-nav-menu li.menu-item,
+	.skin-treatment-col .skin-treatment-link .elementor-widget-container .hfe-nav-menu nav.hfe-nav-menu__layout-vertical ul.hfe-nav-menu li.menu-item,
+	.quick-links-col,
+	.skin-treatment-col{
+		margin-bottom: 15px;
+	}
+	
+	.quick-links-col .footer-quick-links .elementor-widget-container .hfe-nav-menu nav.hfe-nav-menu__layout-vertical ul.hfe-nav-menu li.menu-item:last-child,
+	.dental-treatment-col .dental-treatments-link .elementor-widget-container .hfe-nav-menu nav.hfe-nav-menu__layout-vertical ul.hfe-nav-menu li.menu-item:last-child,
+	.skin-treatment-col .skin-treatment-link  .elementor-widget-container .hfe-nav-menu nav.hfe-nav-menu__layout-vertical ul.hfe-nav-menu li.menu-item:last-child{
+		margin-bottom: 0px;
+	}
+
+	/* Footer Css Eds */
+
+	/* Home Page Css Starts */
+
+	.hero-slider .slick-list .slick-track .slider-item .overlay .slide{
+		padding: 180px 20px;
+	}
+
+	.hero-slider button.slick-arrow{
+		top: auto;
+		bottom: 0;
+		z-index: 10;
+		border-radius: 0;
+		width: 40px;
+		height: 40px;
+		border-color: #3869A4;
+		background: #3869A4;
+	}
+
+	.hero-slider button.slick-arrow i{
+		font-size: 18px;
+	}
+
+	.hero-slider button.slick-arrow.slick-prev{
+		left: 0;
+	}
+
+	.hero-slider button.slick-arrow.slick-next{
+		right: 0;
+	}
+
+	.hero-slider ul.slick-dots{
+		display: none !important;
+	}
+
+	.hero-slider .slick-list .slider-item .slide h2{
+		font-size: 45px;
+	}
+
+	.hero-slider .slick-list .slider-item .slide h3{
+		font-size: 28px;
+		margin: 10px 0;
+	}
+
+	.service-list .service-item{
+		width: calc( 33.33% - 13.33px );
+	}
+	
+	.service-list .service-item:nth-of-type(4n + 4){
+		margin-right: 20px;
+	}
+
+	.service-list .service-item:nth-of-type(3n + 3){
+		margin-right: 0;
+	}
+
+	.service-list button.navigation-btn,
+	.client-review-list button.navigation-btn{
+		top: unset;
+		bottom: 0;
+		width: 40px;
+		height: 40px;
+	}
+
+	.service-list button.navigation-btn.slick-prev,
+	.client-review-list button.navigation-btn.slick-prev{
+		transform: translate(0, 50px);
+		left: 0;
+	}
+
+	.service-list button.navigation-btn.slick-next,
+	.client-review-list button.navigation-btn.slick-next{
+		transform: translate(0, 50px);
+		right: 0;
+	}
+
+	.service-list button.navigation-btn i,
+	.client-review-list button.navigation-btn i{
+		font-size: 22px;
+	}
+
+	.why-choose-us-inner-section{
+		margin-left: 0;
+	}
+
+	.client-review-list .review-item .review-box{
+		margin: 0 20px 20px;
+	}
+
+	.client-review-list .slick-slide{
+		margin: 0px 0px;
+	}
+
+	.client-review-list .slick-list{
+		margin: 0 0px;
+	}
+
+	.service-list .service-item .service-box .service-img h4 a{
+		font-family: 'Recoleta';
+		font-size: 20px;
+		font-weight: 600;
+		color: #3869A4;
+		line-height: 1.2em;
+		margin: 10px 0 20px;
+		transition: all .3s;
+	}
+
+	.our-gallery-slider .elementor-image-carousel-wrapper div.elementor-swiper-button{
+		width: 40px;
+		height: 40px;
+	}
+
+	.our-gallery-slider .elementor-image-carousel-wrapper div.elementor-swiper-button i{
+		font-size: 22px !important;
+	}
+
+	.our-gallery-slider .elementor-image-carousel-wrapper div.elementor-swiper-button.elementor-swiper-button-prev{
+		transform: translate(-60px, -100px);
+	}
+
+	/* Home Page Css Ends */
+	
+}
+
+@media only screen and (max-width: 767px) {
+	
+	.br-mobile-tablet br{
+		display: none;
+	}
+	
+	/* Footer Css Starts */
+
+	.footer-logo-col,
+	.quick-links-col,
+	.skin-treatment-col,
+	.dental-treatment-col,
+	.contact-us-col{
+		width: 100% !important;
+		margin-bottom: 10px
+	}
+	
+	.contact-us-col{
+		margin-bottom: 0 !important;
+	}
+
+	/* Footer Css Eds */
+
+	/* Home Page Css Starts */
+
+	.hero-slider .slick-list .slick-track .slider-item .overlay .slide{
+		padding: 150px 20px;
+		max-height: 500px;
+		height: 500px;
+	}
+
+	.hero-slider button.slick-arrow i{
+		font-size: 16px;
+	}
+	
+	.hero-slider .slick-list .slider-item .slide h2{
+		font-size: 38px;
+	}
+
+	.hero-slider .slick-list .slider-item .slide h3{
+		font-size: 24px;
+	}
+
+	.service-list .service-item{
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+
+	.service-list .service-item:last-child{
+		margin-bottom: 0;
+	}
+	
+	.service-list .service-item:nth-of-type(4n + 4){
+		margin-right: 0px;
+	}
+
+	.service-list .service-item:nth-of-type(3n + 3){
+		margin-right: 0px;
+	}
+
+	.service-list .service-item .service-box .service-desc{
+		transition: all 1s;
+		display: none;
+		opacity: 0;
+	}
+	
+	.service-list .service-item .service-box:hover .service-desc{
+		transform: none;
+		display: block;
+		animation: fadeUp .5s ease-in both;
+	}
+
+	.why-choose-us-points .elementor-image-box-wrapper figure.elementor-image-box-img img{
+		width: 60px;
+		height: 60px;
+	}
+
+	.service-list .slick-slide{
+		margin: 20px;
+	}
+	
+	.service-list .slick-list{
+		margin: 0;
+	}
+
+	.client-review-list .review-item .review-box{
+		padding: 40px 20px;
+	}
+	
+	.client-review-list .review-item .review-box:after{
+		background-size: 70% auto;
+		transform: translate(20px, 20px)
+	}
+	
+	.client-review-list .review-item .review-box .client-detail{
+		display: inline-block;
+	}
+	
+	.client-review-list .review-item .review-box .client-detail .client-name h2{
+		font-size: 16px;
+	}
+	
+	.client-review-list .review-item .review-box .client-detail .client-rating ul li i,
+	.client-review-list .review-item .review-box .client-detail .client-rating ul li.rate{
+		font-size: 12px;
+	}
+
+	.service-list button.navigation-btn.slick-prev,
+	.client-review-list button.navigation-btn.slick-prev{
+		transform: translate(20px, 50px);
+		left: 0;
+	}
+
+	.service-list button.navigation-btn.slick-next,
+	.client-review-list button.navigation-btn.slick-next{
+		transform: translate(-20px, 50px);
+		right: 0;
+	}
+
+	.service-list button.navigation-btn i,
+	.client-review-list button.navigation-btn i{
+		font-size: 18px;
+	}
+
+	/* Home Page Css Ends */
+
+	/* About Us Page Css Starts */
+
+	.about-points ul.elementor-icon-list-items li.elementor-icon-list-item{
+		width: 100%;
+	}
+
+	/* About Us Page Css Ends */
+	
+	/* Contact Us Page Css Starts */
+	
+	.contact-form form.wpcf7-form .form-group{
+		display: block;
+	}
+	
+	.contact-form form.wpcf7-form .form-group .form-item{
+		margin-right: 0;
+	}
+	
+	/* Contact Us Page Css Ends */
+	
+}
